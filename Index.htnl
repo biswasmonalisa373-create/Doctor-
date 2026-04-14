@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Gaming-321 | Pro Mobile Gaming</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">DIGITAL <span>GAMING-321</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="mailto:biswasmonalisa373@gmail.com" class="btn-contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate-pop">Level Up Your <br><span>Mobile Gameplay</span></h1>
+            <p>Pro-level tips, realistic gameplay, and immersive strategies for the next-gen gamer.</p>
+            <div class="hero-btns">
+                <a href="https://www.youtube.com/@DIGITALGAMING-321" target="_blank" class="btn-primary">Watch on YouTube</a>
+                <a href="#games" class="btn-secondary">Explore Games</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-card">
+                <i class="fas fa-gamepad"></i>
+                <span>Pro Tips</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="games" class="bento-section">
+        <h2 class="section-title">Featured Games</h2>
+        <div class="bento-grid">
+            <div class="bento-item card-3d">
+                <h3>DLS 25</h3>
+                <p>Master the pitch with elite tactics.</p>
+            </div>
+            <div class="bento-item card-3d high-row">
+                <h3>Real Cricket 24</h3>
+                <p>The most realistic cricket simulation on mobile.</p>
+            </div>
+            <div class="bento-item card-3d">
+                <h3>Minecraft</h3>
+                <p>Building worlds, one block at a time.</p>
+            </div>
+            <div class="bento-item card-3d wide-col">
+                <h3>Dream Cricket 25</h3>
+                <p>Next-gen graphics and gameplay mechanics.</p>
+            </div>
+            <div class="bento-item card-3d">
+                <h3>Sachin Saga</h3>
+                <p>Relive the legend's greatest moments.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="about">
+        <div class="footer-content">
+            <h3>Connect with Samriddha</h3>
+            <p>High-quality editing. Regular uploads. Pure entertainment.</p>
+            <div class="social-icons">
+                <a href="https://www.youtube.com/@DIGITALGAMING-321"><i class="fab fa-youtube"></i></a>
+                <a href="mailto:biswasmonalisa373@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
