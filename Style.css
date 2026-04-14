@@ -1,0 +1,160 @@
+:root {
+    --primary: #00f2ff;
+    --secondary: #7000ff;
+    --bg: #050505;
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --text: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: var(--primary);
+    text-shadow: 0 0 10px var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: var(--primary);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background: radial-gradient(circle at 80% 20%, #1a0033 0%, #050505 100%);
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content h1 span {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 3D Bento Grid */
+.bento-section {
+    padding: 100px 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    gap: 20px;
+    perspective: 1000px;
+}
+
+.bento-item {
+    background: var(--card-bg);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.5s;
+    transform-style: preserve-3d;
+}
+
+.high-row { grid-row: span 2; }
+.wide-col { grid-column: span 2; }
+
+.bento-item:hover {
+    transform: translateZ(20px) rotateX(5deg) rotateY(-5deg);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5), 0 0 20px rgba(0, 242, 255, 0.2);
+    border-color: var(--primary);
+}
+
+.bento-item h3 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn-primary {
+    background: var(--primary);
+    color: black;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.4);
+    margin-right: 20px;
+}
+
+/* Footer */
+footer {
+    padding: 100px 10%;
+    background: #0a0a0a;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.social-icons i {
+    font-size: 2rem;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icons i:hover {
+    color: var(--primary);
+    transform: scale(1.2);
+}
